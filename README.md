@@ -3,13 +3,13 @@
 Get timezone by latitude and longitude coordinates, similar Google TimeZone API.
 
 
-Requre
-------------
+### Requre
+
 * Mysql: >= 5.6
 
 
-Use
-------------
+### Use
+
 Execute a sql query for find timezone:
 
 ```sql
@@ -20,8 +20,7 @@ Query must retrun string "Europe/Moscow"
 *Function POINT has arguments (Longitude, Latitude)*
 
 
-Manual assembly timezone table
-------------
+### Manual assembly timezone table
 
 1) Download and unzip file tz_world.zip in http://efele.net/maps/tz/world/
 
