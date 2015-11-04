@@ -26,7 +26,9 @@ Manual assembly timezone table
 1) Download and unzip file tz_world.zip in http://efele.net/maps/tz/world/
 
 ```bash
-wget http://efele.net/maps/tz/world/tz_world.zip -O tz_world.zip && unzip tz_world.zip && rm -f tz_world.zip
+wget http://efele.net/maps/tz/world/tz_world.zip -O tz_world.zip &&
+unzip tz_world.zip && 
+rm -f tz_world.zip
 ```
 
 2) Install [ogr2ogr](http://www.osgeo.org) tools included GDAL/OGR
@@ -35,7 +37,9 @@ wget http://efele.net/maps/tz/world/tz_world.zip -O tz_world.zip && unzip tz_wor
 
 3) Convert tz_world.shp to CSV foramt use ogr2ogr
 ```bash
-ogr2ogr -f "CSV" tz_world world/tz_world.shp -lco GEOMETRY=AS_WKT && mv tz_world/tz_world.csv tz_world.csv && rm -rf tz_world world
+/usr/local/bin/ogr2ogr -f "CSV" tz_world world/tz_world.shp -lco GEOMETRY=AS_WKT && 
+mv tz_world/tz_world.csv tz_world.csv && 
+rm -rf tz_world world
 ```
 
 4) Create table structure
