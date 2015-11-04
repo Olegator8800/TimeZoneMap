@@ -3,7 +3,7 @@
 Get timezone by latitude and longitude coordinates, similar Google TimeZone API.
 
 
-### Required
+### Requirements
 
 * Mysql: >= 5.6
 
